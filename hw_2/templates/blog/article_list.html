@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Список статей</title>
+</head>
+<body>
+    <h1>Список статей</h1>
+    <ul>
+        {% for article in object_list %}
+            <li>
+                <a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a>
+            </li>
+        {% empty %}
+            <li>Нет статей.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
