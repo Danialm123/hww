@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6e85c00-821c-4795-956e-5c3b40e700e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hw_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw_2/templates/blog/article_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw_2/templates/blog/article_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw_2/templates/movie/movie_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw_2/templates/movie/movie_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/hw_2/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_2/templates/blog/article_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw_2/blog/templates/blog/article_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_2/templates/blog/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw_2/blog/templates/blog/article_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_2/templates/movie/movie_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw_2/movie/templates/movie/movie_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw_2/templates/movie/movie_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw_2/movie/templates/movie/movie_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +41,16 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/NITRO5/PycharmProjects/hw_2/hw_2/blog/templates"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NITRO5\PycharmProjects\hw_2\hw_2\blog\templates" />
+      <recent name="C:\Users\NITRO5\PycharmProjects\hw_2\hw_2\movie" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
