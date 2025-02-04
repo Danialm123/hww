@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подтвердить удаления</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Вы уверны что хотите удалить пост "{{post.title}}?"</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="bth btn-danger">Удалить</button>
+            <a href="/" class="btn btn-secondary">Отмена</a>
+        </form>
+    </div>
+</body>
+</html>
