@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <style>
+      body { font-family: Arial, sans-serif; }
+      .todo { margin-bottom: 10px; }
+      a { text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>Список Todo</h1>
+    <a href="{% url 'todo_create' %}">Создать новое Todo</a>
+    <ul>
+      {% for todo in todos %}
+        <li class=\"todo\">
+          <a href="{% url 'todo_detail' todo.id %}">{{ todo.title }}</a>
+          <form action="{% url 'todo_delete' todo.id %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Удалить</button>
+          </form>
+        </li>
+      {% empty %}
+        <li>Нет задач</li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
