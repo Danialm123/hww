@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Списки задач{% endblock %}
+{% block content %}
+<h1>Списки задач</h1>
+<ul class="list-group">
+    {% for list in todo_lists %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="{% url 'todo_list_detail' list.id %}">{{ list.title }}</a>
+        <div>
+            <a href="{% url 'edit_todo_list' list.id %}" class="btn btn-sm btn-info">Редактировать</a>
+            <a href="{% url 'delete_todo_list' list.id %}" class="btn btn-sm btn-danger">Удалить</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- Кнопка для открытия модального окна создания нового списка -->
+<button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#createTodoListModal">
+    Создать новый список
+</button>
+
+<!-- Модальное окно с формой -->
+<div class="modal fade" id="createTodoListModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="post">
+        {% csrf_token %}
+        <div class="modal-header">
+          <h5 class="modal-title">Новый список задач</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ form.as_p }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+          <button type="submit" class="btn btn-primary">Создать</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
